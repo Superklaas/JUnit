@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestCalculator {
+public class CalculatorTest {
 
     //Unit test isEven(): parameterized test, input value source
     @ParameterizedTest(name = "Test isEven()")

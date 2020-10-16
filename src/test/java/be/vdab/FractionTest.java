@@ -4,7 +4,7 @@ import be.vdab.Fraction.Fraction;
 import org.junit.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestFraction {
+public class FractionTest {
 
     @Test
     public void getNumerator() {
