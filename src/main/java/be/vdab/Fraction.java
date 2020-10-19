@@ -1,4 +1,4 @@
-package be.vdab.Fraction;
+package be.vdab;
 
 import javax.swing.text.Utilities;
 

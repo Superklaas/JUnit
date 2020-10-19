@@ -1,6 +1,5 @@
 package be.vdab;
 
-import be.vdab.Fraction.Fraction;
 import org.junit.*;
 import static org.junit.jupiter.api.Assertions.*;
 
