@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="StudentDB@noelvaes.eu" uuid="5a3bacb5-396a-440d-bd93-e2af6c9291b8">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://noelvaes.eu:3307/StudentDB</jdbc-url>
+    </data-source>
+  </component>
+</project>
