@@ -15,15 +15,29 @@ import static org.junit.jupiter.api.Assumptions.*;
 
 public class TutorialRangaKaranam {
 
-    // fixture: executed before every unit test in this test case
-    /*@BeforeEach
-    void beforeEach(TestInfo testInfo) {
+    @BeforeAll
+    static void setUpTestCase() {
+        System.out.println("setting up");
+    }
+
+    @AfterAll
+    static void tearDownTestCase() {
+        System.out.println("tearing down");
+    }
+
+    @BeforeEach
+    void setUp(TestInfo testInfo) {
         System.out.println("Initialize test data before " + testInfo.getDisplayName());
-    }*/
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("tearing down");
+    }
 
     @ParameterizedTest(name = "{0} length is {1}")
     @CsvSource(value = {"abc,3","defgh,5","'',0"})
-    @DisplayName("length() gives correct length of string?")
+    @DisplayName("does length() give correct length of string?")
     void length(String string,int expectedLength) {
         assertEquals(expectedLength,string.length());
     }
@@ -35,17 +49,17 @@ public class TutorialRangaKaranam {
         assertThrows(
                 NullPointerException.class,    // which exception is expected to be thrown
                 ()->{s.length();}              // which method should throw the exception in this case
-                );
+        );
     }
 
     @Test
-    @EnabledOnOs(OS.WINDOWS)
+    @EnabledOnOs(OS.MAC)
     @DisplayName("does Math.min() generate correct minimum number?")
     void min() {
         double a = 12.123;
         double b = 12.456;
-        double actualMin = Math.min(a,b);
         double expectedMin = 12.123;
+        double actualMin = Math.min(a,b);
         assertNotNull(actualMin);
         assertEquals(expectedMin, actualMin);
     }

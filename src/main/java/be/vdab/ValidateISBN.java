@@ -1,4 +1,4 @@
-package be.vdab.TutorialUdemy;
+package be.vdab;
 
 public class ValidateISBN {
 
